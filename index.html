@@ -9,15 +9,15 @@
 </head>
 <body>
     <svg class="topthing" width='400' height='100' viewbox='0 0 400 100'>
-        <use href='#home'></use>
+        <use id="home-search-use" href='#home'></use>
     </svg>
     <svg style="display: none;" width='400' height='100' viewbox='0 0 400 100'>
-        <symbol id="home" class='home' width='400' height='100' viewbox='0 0 400 100'>
+        <symbol id="home" width='400' height='100' viewbox='0 0 400 100'>
             <rect class="homebase" x='10' y='50' width='80' height='40' fill='rgb(120,30,250)'></rect>
-            <polygon class="homeroof" points='10,50 90,50 50,10' stroke='brown' fill='rgb(120,30,250)' stroke-width='5'></polygon>
+            <polygon class="homeroof" points='10,50 90,50 50,10' stroke='currentColor' fill='rgb(120,30,250)' stroke-width='5'></polygon>
             <circle r='8' cx='50' cy='70' fill='yellow' stroke-width='5' stroke='black'></circle>
-            <circle r='25' cy='40' cx='360' fill='white' stroke='rgb(0,125,0)' stroke-width='5'></circle>
-            <line x1='295' x2='340' y1='90' y2='52' stroke='rgb(0,125,0)' stroke-width='5'></line>
+            <circle class="search" r='25' cy='40' cx='360' fill='white' stroke='currentColor' stroke-width='5'></circle>
+            <line class="search" x1='295' x2='340' y1='90' y2='52' stroke='currentColor' stroke-width='5'></line>
         </symbol>
     </svg>
     <svg class="cross"

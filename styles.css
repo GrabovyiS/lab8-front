@@ -35,12 +35,6 @@ rect {
   transform: translate(70px, -40px) rotate(45deg);
 }
 /* сделать хавер на штуки внутри use */
-.home:hover rect,
-.home:hover polygon,
-.home:hover line {
-  fill: blue;
-  stroke: blue;
-}
 
 .switch {
   outline: none;
@@ -96,4 +90,11 @@ path {
   position: absolute;
   transform-origin: 50px 50px;
   transform: rotate(135deg);
+}
+.home:hover {
+  color: blue;
+  fill: currentColor;
+}
+#home-search-use:hover {
+  color: pink;
 }
