@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+svg {
+  border: 2px solid black;
+  display: block;
+  margin: 20px;
+}
+.cross:hover line,
+.cross:hover circle {
+  stroke: red;
+}
+.ham:hover line {
+  stroke: seagreen;
+}
+line,
+circle,
+rect {
+  transition: all 0.5s;
+}
+#line1,
+#line2,
+#line3 {
+  transition: all 0.5s;
+}
+.line1-animate {
+  transform: translate(0px, 73px) rotate(-45deg);
+}
+.line2-animate {
+  opacity: 0;
+}
+.line3-animate {
+  transform: translate(70px, -40px) rotate(45deg);
+}
+/* сделать хавер на штуки внутри use */
+.home:hover rect,
+.home:hover polygon,
+.home:hover line {
+  fill: blue;
+  stroke: blue;
+}
+
+.switch {
+  outline: none;
+  margin-left: 20px;
+}
+path {
+  transition: all 0.5s;
+}
+.light {
+  fill: yellow;
+}
+.time {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+#hrs {
+  position: absolute;
+  transform-origin: 50px 50px;
+  animation: time infinite linear 17s;
+}
+#mnts {
+  position: absolute;
+  transform-origin: 50px 50px;
+  animation: time infinite linear 4s;
+}
+.sunbase {
+  position: relative;
+  z-index: 2;
+}
+@keyframes time {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#beam {
+  position: relative;
+}
+#beams2 {
+  position: absolute;
+  transform-origin: 50px 50px;
+  transform: rotate(45deg);
+}
+#beams3 {
+  position: absolute;
+  transform-origin: 50px 50px;
+  transform: rotate(90deg);
+}
+#beams4 {
+  position: absolute;
+  transform-origin: 50px 50px;
+  transform: rotate(135deg);
+}

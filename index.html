@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <svg class="topthing" width='400' height='100' viewbox='0 0 400 100'>
+        <use href='#home'></use>
+    </svg>
+    <svg style="display: none;" width='400' height='100' viewbox='0 0 400 100'>
+        <symbol id="home" class='home' width='400' height='100' viewbox='0 0 400 100'>
+            <rect class="homebase" x='10' y='50' width='80' height='40' fill='rgb(120,30,250)'></rect>
+            <polygon class="homeroof" points='10,50 90,50 50,10' stroke='brown' fill='rgb(120,30,250)' stroke-width='5'></polygon>
+            <circle r='8' cx='50' cy='70' fill='yellow' stroke-width='5' stroke='black'></circle>
+            <circle r='25' cy='40' cx='360' fill='white' stroke='rgb(0,125,0)' stroke-width='5'></circle>
+            <line x1='295' x2='340' y1='90' y2='52' stroke='rgb(0,125,0)' stroke-width='5'></line>
+        </symbol>
+    </svg>
+    <svg class="cross"
+    viewbox = "0 0 100 100"
+    width = "100"
+    height = "100">
+            <circle cx='50' cy='50' r='40' fill='white' stroke-width='6' stroke='rgb(0,0,0)'></circle>
+            <line x1='25' x2='75' y1='25' y2='75' stroke-width='8' stroke='black'></line>
+            <line x1='75' x2='25' y1='25' y2='75' stroke-width='8' stroke='black'></line>
+        </svg>
+    <svg
+        class="ham"
+        id="ham"
+        viewbox = "0 0 100 100"
+        width = "100"
+        height = "100">
+        <line id="line1" class="ham-line" x1='10' x2='90' y1='20' y2='20' stroke-width='15' stroke='purple'></line>
+        <line id="line2" class="ham-line" x1='10' x2='90' y1='50' y2='50' stroke-width='15' stroke='purple'></line>
+        <line id="line3" class="ham-line" x1='10' x2='90' y1='80' y2='80' stroke-width='15' stroke='purple'></line>
+    </svg>
+    <svg
+        viewbox = "0 0 100 100"
+        width = "100"
+        height = "100">
+        <rect  x='30' y='80' width='40' height='10' fill='white' stroke='black' stroke-width='5'></rect>
+        <path id="lamp"
+            d='M 30 80 L 30 69 C -16 -16 119 -12 70 69 L 70 80
+            
+            '
+            stroke='black'
+            stroke-width='5'
+            fill='white'
+
+        >
+        </path>
+    </svg>
+    <button class="switch" id="switch">switch</button>
+    <svg class="time"
+        viewbox = "0 0 100 100"
+        width = "100"
+        height = "100">
+        <circle cx='50' cy='50' r='45' fill='white' stroke-width='4' stroke='rgb(0,0,0)'></circle>
+        <line x1='50' x2='50' y1='90' y2='80' stroke-width='4' stroke='black'></line>
+        <line x1='50' x2='50' y1='10' y2='20' stroke-width='4' stroke='black'></line>
+        <line x1='90' x2='80' y1='50' y2='50' stroke-width='4' stroke='black'></line>
+        <line x1='20' x2='10' y1='50' y2='50' stroke-width='4' stroke='black'></line>
+        <line id="hrs" x1='50' x2='80' y1='50' y2='50' stroke-width='6' stroke='red' stroke-linecap='round'></line>
+        <line id="mnts" x1='50' x2='90' y1='50' y2='50' stroke-width='6' stroke='red' stroke-linecap='round'></line>
+    </svg>
+    <svg class="sun"
+        viewbox = "0 0 100 100"
+        width = "100"
+        height = "100">
+            <circle class="sunbase" cx='50' cy='50' r='27' fill='orange' stroke='#c65102' stroke-width='3'></circle>
+            <use id="beams1" href='#beam'></use>
+            <use id="beams2" href='#beam'></use>
+            <use id="beams3" href='#beam'></use>
+            <use id="beams4" href='#beam'></use>
+        </svg>
+    <svg style="display: none;" viewbox = "0 0 100 100"
+        width = "100"
+        height = "100">
+        <symbol id="beam" viewbox = "0 0 100 100"
+        width = "100"
+        height = "100">
+            <polygon points='40,25 50,10 60,25' stroke='brown' fill='#c65102'></polygon>
+            <polygon points='40,75 50,90 60,75' stroke='brown' fill='#c65102'></polygon>
+        </symbol>
+    </svg>
+    <script src="./script.js"></script>
+</body>
+</html>
